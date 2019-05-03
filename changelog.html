@@ -16,6 +16,25 @@
 <meta property="og:image:height" content="239" />
 <meta property="og:description" content="The official website for Trap Madness. Germanys first and biggest Trap Channel and your source of amazing music on Youtube!">
 <link rel="manifest" href="/manifest.json">
+
+<!-- Notification  System-->
+  <script> 
+      if ("Notification" in window) {
+                let ask = Notification.requestPermission();
+                ask.then( permission => {
+                      if  ( permission === "granted" ) {
+                          let msg = new Notification( "Update v1.7", {
+                              body: "- Minor Ui improvements\n - Removed cookies from site (because it is causing problems in the Back-End of the site)\n - Added partners list\n - New layout for navbar\n - Added blog to the site\n - Minor bug/error fixes\n",
+                              icon: "https://cdn.glitch.com/90969a27-775d-42ea-bbaa-b1e80fa7b088%2FTrap_Madness_d.png?1555261812228",
+              });
+                        msg.addEventListener( "click", event => {
+                            alert( "Click received" );
+                        });
+                      }                       
+                         });
+                }
+ </script>  
+  
   </head>
   <head>
     <style>html, body { background: black; color: white; }</style>
