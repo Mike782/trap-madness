@@ -1,0 +1,10 @@
+{
+  "name": "Trap Madness Website",
+  "short_name": "Trap Madness",
+  "icons": [{
+        "src": "https://cdn.glitch.com/90969a27-775d-42ea-bbaa-b1e80fa7b088%2FTrap_Madness_d.png?1555261812228",
+        "sizes": "304x239",
+        "type": "image/png"
+      }],
+  "start_url": "https://trap-madness.glitch.me/",
+}
