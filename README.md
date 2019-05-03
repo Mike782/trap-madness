@@ -1,4 +1,9 @@
 # trap-madness
 The official website for Trap Madness.
 
-You are welcome to clone, and edit this site as you want.
+# To-Do
+- Account system
+- Work on site loading time
+- Added partners to list
+- Fix mobile Ui
+
