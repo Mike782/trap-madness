@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <html>
-  <title>Trap Madness ChangeLog [0.1.7.1]</title>
+  <title>Trap Madness ChangeLog [0.1.8]</title>
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -23,8 +23,8 @@
                 let ask = Notification.requestPermission();
                 ask.then( permission => {
                       if  ( permission === "granted" ) {
-                          let msg = new Notification( "Update v1.7", {
-                              body: "- Minor Ui improvements\n - Removed cookies from site (because it is causing problems in the Back-End of the site)\n - Added partners list\n - New layout for navbar\n - Added blog to the site\n - Minor bug/error fixes\n",
+                          let msg = new Notification( "Update v1.8", {
+                              body: "-Improved site loading time\n-Added partner list",
                               icon: "https://cdn.glitch.com/90969a27-775d-42ea-bbaa-b1e80fa7b088%2FTrap_Madness_d.png?1555261812228",
               });
                         msg.addEventListener( "click", event => {
@@ -59,6 +59,10 @@
 ## [Unreleased]
 - Account system with a via login.
 - Mobile imrpovements.
+
+## [0.1.8]
+- Improved site loading time.
+- Added partner list.
 
 ## [0.1.7.1]
 - Minor error fixes.
