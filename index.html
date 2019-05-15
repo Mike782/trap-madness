@@ -24,24 +24,6 @@
 <!-- Main css -->
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Lora%7cMerriweather:300,400" rel="stylesheet">
-
-<!-- Notification  System-->
-  <script> 
-      if ("Notification" in window) {
-                let ask = Notification.requestPermission();
-                ask.then( permission => {
-                      if  ( permission === "granted" ) {
-                          let msg = new Notification( "New video", {
-                              body: "Hey guys, there is a new video up on our channel. Be sure to go check it out.\n",
-                              icon: "https://cdn.glitch.com/90969a27-775d-42ea-bbaa-b1e80fa7b088%2FTrap_Madness_d.png?1555261812228",
-              });
-                        msg.addEventListener( "click", event => {
-                            alert( "Click received" );
-                        });
-                      }                       
-                         });
-                }
- </script>  
   
 </head>
 <body>
@@ -54,8 +36,6 @@
      </div>
 </div>
   
- <body onload="checkCookie()"></body>  
-
 <!-- Navigation section  -->
 
 <div class="navbar navbar-default navbar-static-top" role="navigation">
@@ -83,6 +63,24 @@
   </div>
 </div>
 
+<!-- Notification  System-->
+  <script> 
+      if ("Notification" in window) {
+                let ask = Notification.requestPermission();
+                ask.then( permission => {
+                      if  ( permission === "granted" ) {
+                          let msg = new Notification( "New video", {
+                              body: "Hey guys, there is a new video up on our channel. Be sure to go check it out.\n",
+                              icon: "https://cdn.glitch.com/90969a27-775d-42ea-bbaa-b1e80fa7b088%2FTrap_Madness_d.png?1555261812228",
+              });
+                        msg.addEventListener( "click", event => {
+                            alert( "Click received" );
+                        });
+                      }                       
+                         });
+                }
+ </script>      
+    
 <!-- Home Section -->
 
 <section id="home" class="main-home parallax-section">
